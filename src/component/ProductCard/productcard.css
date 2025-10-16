@@ -1,0 +1,178 @@
+.products {
+  background-color: #f2f2f2;
+  
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Har doim 2 ta yonma-yon */
+  gap: 12px;
+}
+
+.product-card {
+  border-radius: 13px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  min-height: 70px;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.product-image {
+  position: relative;
+  aspect-ratio: 1;
+  background: #f9f9f9;
+  border-radius: 12px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.08);
+}
+
+.product-image img {
+  
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  transform: scale(0.); 
+  transition: transform 0.3s ease, opacity 0.3s ease;
+   }
+
+   .product-image img:hover {
+    border-radius: 10px;
+       transform: scale(1); /* hover qilinganda oldinga chiqadi */
+       opacity: 1;
+     }
+
+   .image-overlay {
+     position: absolute;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     background:#00000067;
+     padding: 15px;
+     color: white;
+   }
+
+   .product-name {
+     font-size: 1.25rem;
+     font-weight: 600;
+     color: #ffffff;
+     margin: 0 0 5px 0;
+   }
+
+   .product-description {
+     font-size: 15px;
+     color: #ffffff;
+     line-height: 1.4;
+     margin: 0 0 5px 0;
+   }
+
+   .product-price {
+    padding: 5px;
+     font-size: 17px;
+     font-weight: 700;
+     color: #ffffff;
+     margin: 0;
+   }
+
+.product-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Tablet va o‘rta ekranlar */
+@media (max-width: 1200px) {
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr); /* har doim 2 ustun */
+    gap: 12px;
+  }
+
+  .product-card {
+    padding: 5px;
+    min-height: 100px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 ta yonma-yon */
+    gap: 8px;
+  }
+
+  .product-card {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 0;
+    position: relative;
+    aspect-ratio: 182 / 185;
+    width: 100%;
+  }
+
+  .product-image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  .product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .image-overlay {
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    color: white;
+  }
+
+  .product-name {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 140%;
+    color: #ffffff;
+    margin: 0 0 5px 0;
+  }
+
+  .product-description {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 119%;
+    color: #FFD700;
+    margin: 0 0 5px 0;
+  }
+
+  .product-price {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 140%;
+    text-align: center;
+    color: #ffffff;
+    margin: 0;
+  }
+
+  .product-card.drinks {
+    aspect-ratio: 162 / 165;
+  }
+}

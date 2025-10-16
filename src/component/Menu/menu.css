@@ -1,0 +1,86 @@
+/* src/pages/Menu.css */
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* padding: 20px; */
+  gap: 20px;
+}
+
+.menu-container {
+  display: flex;
+  width: 200%;
+  transition: transform 0.5s ease-in-out;
+  overflow: hidden;
+}
+
+.container {
+  overflow: hidden;
+  width: 100%;
+}
+
+.menu-slide {
+  width: 50%;
+}
+
+.products {
+  margin-top: 30px;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+  width: 100%;
+  margin-top: 30px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 1200px) {
+  .container {
+    padding: 0 15px;
+  }
+
+  .menu {
+    padding: 15px 0;
+  }
+
+  .products-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 15px;
+  }
+
+  .products-grid > * {
+    flex: 0 0 calc(50% - 7.5px);
+  }
+}
+
+@media (max-width: 380px) {
+  .container {
+    padding: 0 10px;
+  }
+
+  .menu {
+    padding: 10px 0;
+  }
+
+  .products-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .products-grid > * {
+    flex: 0 0 100%;
+  }
+
+  .products {
+    margin-bottom: 20px;
+  }
+}
+
+  

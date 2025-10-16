@@ -1,0 +1,56 @@
+.category-menu {
+  margin-top: 30px;
+  /* padding: 12px 20px; */
+  display: flex;
+  justify-content: center; 
+}
+
+.category-tabs {
+  display: flex;
+  justify-content: center;
+  background: #e5e5e5;
+  border-radius: 25px;
+  padding: 4px;
+  gap: 4px;
+  width: fit-content; 
+  margin: 0 auto;
+}
+
+.category-tab {
+  padding: 12px 20px;   /* desktop uchun biroz kattaroq */
+  border: none;
+  background: transparent;
+  border-radius: 25px;
+  font-weight: 500;
+  font-size: 18px;      /* desktopda katta font */
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #000;
+  white-space: nowrap;
+}
+
+.category-tab.active {
+  background: #fdd500;
+  color: #000;
+  font-weight: 500;
+}
+
+/* Tablet (<=768px) */
+@media (max-width: 768px) {
+  .category-tab {
+    font-size: 15px;
+    padding: 13px 14px;
+  }
+}
+
+/* Mobile (<=480px) */
+@media (max-width: 480px) {
+  .category-menu {
+    margin-top: 35px;
+  }
+
+  .category-tab {
+    font-size: 13px;
+    padding: 10px 10px;
+  }
+}

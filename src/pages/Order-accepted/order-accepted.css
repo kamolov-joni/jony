@@ -1,0 +1,191 @@
+
+.order-accepted-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  /* Asosiy karta */
+  .order-accepted {
+    height: 600px;
+    width:450px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    position: relative;
+  }
+  
+  /* Doira */
+  .order-accepted-circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 6px solid #FFD700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Check ikonkasi */
+  .check-icon {
+    width: 100px;
+    height: 100px;
+    stroke:#FFD700;
+    stroke-width: 3;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+  
+  /* Sarlavha */
+  .order-title {
+    font-size: 26px;
+    font-weight: bold;
+    color:#000;
+    margin-bottom: 10px;
+  }
+  
+  /* Matn */
+  .order-text {
+    font-size: 18px;
+    color: #333;
+    font-family: inherit;
+  }
+  
+  .ord-btn {
+     width: 220px;
+     height: 50px;
+     background-color: #FFD700;
+     border: none;
+     border-radius: 10px;
+     color: #000;
+     font-size: 15px;
+     cursor: pointer;
+  }
+
+
+  .exit-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 28px;
+    height: 28px;
+    background-color: #fff;
+    border: 2px solid #FFD700;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    text-decoration: none;
+    color: #FFD700;
+  }
+
+  .exit-button svg {
+    width: 17px;
+    height: 17px;
+  }
+
+  .exit-button:hover {
+    background-color: #FFD700;
+    color: #fff;
+  }
+
+  @media (max-width: 768px) {
+    .order-accepted {
+        width: 330px;
+        height: 400px;
+    }
+    .order-accepted-circle {
+        width: 105px;
+        height: 105px;
+    }
+    .check-icon {
+        width: 60px;
+        height: 58px;
+    }
+    .order-title {
+        font-size: 20px;
+    }
+    .order-text {
+        font-size: 16px;
+    }
+    .ord-btn {
+        width: 200px;
+        height: 45px;
+        font-size: 14px;
+    }
+    .exit-button {
+        width: 35px;
+        height: 35px;
+    }
+    .exit-button svg {
+        width: 16px;
+        height: 16px;
+    }
+  }
+
+  @media (min-width: 769px) {
+    .order-accepted {
+        width: 500px;
+        height: 650px;
+    }
+    .order-accepted-circle {
+        width: 180px;
+        height: 180px;
+    }
+    .check-icon {
+        width: 120px;
+        height: 120px;
+    }
+    .order-title {
+        font-size: 32px;
+    }
+    .order-text {
+        font-size: 20px;
+    }
+    .ord-btn {
+        width: 250px;
+        height: 55px;
+        font-size: 16px;
+    }
+    .exit-button {
+        width: 45px;
+        height: 45px;
+    }
+    .exit-button svg {
+        width: 20px;
+        height: 20px;
+    }
+  }
+
+   @media (min-width: 350px) {
+     .order-title {
+        font-size: 15px;
+      }
+   }
+
+    @media (min-width: 350px) {
+      .order-text {
+          font-size: 14px;
+          font-family: inherit;
+        }
+    }
+
+    @media (min-width: 350px) {
+      .edd {
+        font-size:14px;
+        font-family: inherit;
+      }
+    }

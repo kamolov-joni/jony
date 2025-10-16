@@ -1,0 +1,128 @@
+.basic-section-image {
+    /* background-image: url("/public/images/header.jpg"); */
+    /* transform: scale(1.3);  */
+    background-color: rgb(124, 124, 124);
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+}
+
+.basic-content {
+    padding: 180px;
+}
+
+.basic-text {
+   color: white;
+   font-size: 64px;
+}
+
+
+
+.basic-title {
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+}
+
+.button-order {
+    height: 44px;
+    width: 150px;
+    font-size: 16px;
+    background-color:#FDD500;
+    color: black;
+    border: none;
+    border-radius: 10px;
+}
+.basic-buttons {
+    display: flex;
+    gap: 10px;
+}
+.button-menu {
+    height: 44px;
+    width: 150px;
+    background-color: red;
+    font-size: 16px;
+    color: white;
+    border:none;
+    border-radius: 10px;
+}
+
+.phone-popup {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .phone-link {
+    font-size: 20px;
+    color: #28a745;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .phone-link:hover {
+    text-decoration: underline;
+  }
+
+  /* Mobile Responsive */
+  @media (max-width: 768px) {
+    .basic-section-image {
+      
+
+      height: 300px;
+    }
+
+    .basic-content {
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    .basic-text {
+      font-size: 36px;
+    }
+
+    .basic-title {
+      font-size: 14px;
+      max-width: 300px;
+      margin: 0 auto;
+    }
+
+    .basic-buttons {
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .button-order,
+    .button-menu {
+      width: 140px;
+      height: 40px;
+      font-size: 14px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .basic-section-image {
+      background-image: url("/public/images/header.jpg");
+      transform: scale(1.1);
+      height: 350px;
+    }
+
+    .basic-content {
+      padding: 110px 15px;
+    }
+
+    .basic-text {
+      font-size: 28px;
+    }
+
+    .basic-title {
+      font-size: 13px;
+    }
+
+    .button-order,
+    .button-menu {
+      width: 130px;
+      height: 38px;
+      font-size: 13px;
+    }
+  }
