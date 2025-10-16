@@ -13,9 +13,7 @@ function Navbar ({ onCartClick, totalPrice }) {
     }
   }, []);
 
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
+  
 
   return (
     <header className="header">
@@ -35,8 +33,7 @@ function Navbar ({ onCartClick, totalPrice }) {
              <a href="#contact" className="nav-link" onClick={() => setIsMenuOpen(false)}>Kontact</a>
            </nav>
 
-      
-
+       
           {/* Right side */}
           <div className="header-actions">
         

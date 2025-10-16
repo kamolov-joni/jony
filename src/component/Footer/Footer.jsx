@@ -12,7 +12,7 @@ const Footer = () => {
             <img src="/images/black-logo.png" alt="Xumor Somsa" />
           </div>
           <p className="footer-tagline">Xumor Somsa — milliy ta'mni sevuvchilar uchun</p>
-          <br />xq
+          <br ></br>
           <div className="footer-social">
             <a href="https://www.instagram.com/xumor_somsa/"> <img src="/images/Instagram.png" alt="Instagram" className="instagram-icon" /></a>
          </div>
