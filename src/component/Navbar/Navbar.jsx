@@ -8,9 +8,7 @@ function Navbar ({ onCartClick, totalPrice }) {
 
   useEffect(() => {
     const userData = localStorage.getItem('userData');
-    if (userData) {
-      setIsLoggedIn(true);
-    }
+    setIsLoggedIn(!!userData);
   }, []);
 
   

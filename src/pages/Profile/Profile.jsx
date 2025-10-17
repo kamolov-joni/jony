@@ -37,6 +37,8 @@ export default function ProfilePage() {
   const handleSave = () => {
     localStorage.setItem('userData', JSON.stringify(userData));
     alert('Ma\'lumotlar saqlandi!');
+    // Force re-render to update navbar login status
+    window.location.reload();
   };
 
   const renderContent = () => {
