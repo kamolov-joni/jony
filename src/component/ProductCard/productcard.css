@@ -5,10 +5,8 @@
 
 .products-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 25px;
-  width: 100%;
-  margin-top: 30px;
+  grid-template-columns: repeat(2, 1fr); /* Har doim 2 ta yonma-yon */
+  gap: 12px;
 }
 
 .product-card {
@@ -37,11 +35,12 @@
 }
 
 .product-image img {
+  
   width: 100%;
-  height: auto;
+  height: 100%;
   object-fit: cover;
   border-radius: 10px;
-  transform: scale(1);
+  transform: scale(0.); 
   transition: transform 0.3s ease, opacity 0.3s ease;
    }
 
@@ -92,8 +91,8 @@
 /* Tablet va o‘rta ekranlar */
 @media (max-width: 1200px) {
   .products-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
+    grid-template-columns: repeat(2, 1fr); /* har doim 2 ustun */
+    gap: 12px;
   }
 
   .product-card {
@@ -103,10 +102,10 @@
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   .products-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
+    grid-template-columns: repeat(2, 1fr); /* 2 ta yonma-yon */
+    gap: 8px;
   }
 
   .product-card {
@@ -134,11 +133,11 @@
 
   .image-overlay {
     position: absolute;
-    bottom: 0;
+    bottom: -8px;
     left: 0;
     right: 0;
     background: rgba(0, 0, 0, 0.5);
-    padding: 10px;
+    padding: 5px;
     color: white;
   }
 
@@ -175,12 +174,5 @@
 
   .product-card.drinks {
     aspect-ratio: 162 / 165;
-  }
-}
-
-@media (max-width: 480px) {
-  .products-grid {
-    grid-template-columns: 1fr;
-    gap: 15px;
   }
 }
