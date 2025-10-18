@@ -47,14 +47,9 @@
   }
 
   .products-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 15px;
-  }
-
-  .products-grid > * {
-    flex: 0 0 calc(50% - 7.5px);
   }
 }
 
